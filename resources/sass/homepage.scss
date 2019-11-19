@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+* {
+    font-family: Roboto!important;
+}
+
+div.mainhomepage {
+    #background-1 {
+        background-image: url("/img/hero.jpg");
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        height: 60vh;
+    }
+    .search {
+        padding: 200px 0 400px 0;
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        .searchbox {
+            padding: 30px;
+            width: 550px;
+            background: white;
+            border-radius: 5px;
+            height: 200px;
+            h1 {
+                text-align: left;
+                margin-bottom: 20px;
+            }
+            .cerca{
+              display: flex;
+              .bottone-invia{
+                background: red;
+                height: 50px;
+                width: 70%;
+                margin:0 auto;
+                margin-top: 15px;
+
+              }
+              .searchform {
+                  display: flex;
+                  input {
+                      width: 100%;
+                      padding-left: 7px;
+                      font-size: 16px;
+                      font-weight: 100;
+                      height: 40px;
+                  }
+
+                  a {
+                      display: inline-block;
+                      text-align: end;
+                      margin-left: 20px;
+                      text-decoration: none;
+                      padding: 10px 15px;
+                      background-color: #ff5b60;
+                      color: white;
+                      border-radius: 5px;
+                  }
+
+              }
+            }
+
+        }
+    }
+    .showflats,
+    .showflatsrates {
+        padding-bottom: 30px;
+        .linkallflats,
+        .flatsratetitle {
+            padding-top: 50px;
+            margin-bottom: 30px;
+            h3 {
+                font-size: 25px;
+                font-weight: 700;
+                color: black;
+            }
+            a {
+                text-decoration: none;
+                font-size: 25px;
+                font-weight: 700;
+                color: black;
+            }
+        }
+        .someflats,
+        .showflatsrates {
+            padding-top: 15px;
+            .row{
+              display: flex;
+              flex-wrap: wrap;
+            }
+        }
+        .flat {
+            border-radius: 8px;
+            width: 96%;
+            margin-bottom: 40px;
+            box-shadow: 2px 2px 12px #ececec;
+            transition: 0.3s;
+            position: relative;
+
+            &:hover{
+              transform: translateY(-3px);
+              box-shadow: 6px 6px 12px #d7d7d7
+            }
+
+            // background: #f2f2f2;
+            a {
+                text-decoration: none;
+                color: black;
+                img {
+                    width: 100%;
+                    height: auto;
+                    border-radius: 5px;
+                }
+                .flex-rate {
+                    padding: 20px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    align-items: center;
+                      p{
+                        &:first-letter{
+                          text-transform: capitalize;
+                        }
+                      }
+                      h3 {
+                          margin-bottom: 8px;
+                          width: 100%;
+                          font-size: 1.6rem;
+                          color: rgb(57, 57, 57);
+                          &::first-letter{
+                            text-transform: capitalize;
+                          }
+                      }
+                }
+                .rate{
+                  position: absolute;
+                  top: 15px;
+                  right: 15px;
+                  background:white;
+                  height: 40px;
+                  width: 40px;
+                  color: rgb(125, 125, 125);
+                  border-radius: 50%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  font-size: 15px;
+                  font-weight: bolder;
+                  border: 2px solid #ff5b60;
+                }
+            }
+        }
+    }
+}

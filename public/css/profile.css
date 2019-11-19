@@ -1,0 +1,232 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap);* {
+  font-family: Roboto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+*::first-letter {
+  text-transform: capitalize;
+}
+
+.profile-container {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 1700px;
+}
+
+.profile-container .sidebar {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+  padding: 30px 0;
+  padding-right: 70px;
+}
+
+.profile-container .sidebar a {
+  margin-left: 40px;
+  color: gray;
+}
+
+.profile-container .sidebar a:hover {
+  color: #ff5b60;
+}
+
+.profile-container .content {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.profile-container .content .user {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  padding: 0 70px;
+  margin-top: 40px;
+}
+
+.profile-container .content .user h1 {
+  font-weight: normal;
+}
+
+.profile-container .content .user .btn {
+  display: -webkit-box;
+  display: flex;
+}
+
+.profile-container .content .user .btn a {
+  margin-left: 40px;
+  color: gray;
+}
+
+.profile-container .content .user .btn a:hover {
+  color: #ff5b60;
+}
+
+.profile-container .content > h1 {
+  margin-left: 70px;
+  margin-top: 40px;
+  font-size: 2rem;
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+
+.profile-container .content .flats-list {
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
+  padding: 40px;
+  padding-top: 0;
+  position: relative;
+}
+
+.profile-container .content .flats-list .box {
+  position: relative;
+  width: 400px;
+  max-height: 600px;
+  margin: 30px;
+  height: auto;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 2px 2px 12px #ececec;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.profile-container .content .flats-list .box:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  box-shadow: 6px 6px 12px #d7d7d7;
+}
+
+.profile-container .content .flats-list .box img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.profile-container .content .flats-list .box .box-sections {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+
+.profile-container .content .flats-list .box .box-sections ::first-letter {
+  text-transform: capitalize;
+}
+
+.profile-container .content .flats-list .box .box-sections .flat-title {
+  font-weight: normal;
+}
+
+.profile-container .content .flats-list .box .box-sections .details {
+  width: 100%;
+  margin: 15px 0;
+  display: -webkit-box;
+  display: flex;
+}
+
+.profile-container .content .flats-list .box .box-sections .details p {
+  margin-right: 15px;
+}
+
+.profile-container .content .flats-list .box .rate {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: white;
+  height: 40px;
+  width: 40px;
+  color: #7d7d7d;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  font-size: 15px;
+  font-weight: bolder;
+  border: 2px solid #ff5b60;
+}
+
+.profile-container .content .paginate {
+  display: -webkit-box;
+  display: flex;
+  width: 100%;
+  margin: auto;
+  -webkit-box-pack: center;
+          justify-content: center;
+  margin-bottom: 70px;
+}
+
+.profile-container .content .paginate .pagination {
+  list-style: none;
+}
+
+.profile-container .content .paginate .pagination .page-item {
+  float: left;
+  border: solid 2px #ff5b60;
+  margin: 10px;
+  height: 20px;
+  width: 20px;
+  padding: 20px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  font-size: 18px;
+}
+
+.profile-container .content .paginate .pagination .page-item .page-link {
+  padding: 20px;
+  font-weight: lighter;
+  color: #737373;
+}
+
+.profile-container .content .paginate .pagination .page-item.disabled {
+  display: none;
+}
+
+.profile-container .content .paginate .pagination .page-item.active {
+  background: #ff5b60;
+  color: white !important;
+  font-weight: bolder;
+}
+
+.profile-container .content .paginate .pagination .page-item.active .page-link {
+  font-weight: bolder;
+  color: white;
+}
+
+.list-message {
+  max-width: 1140px;
+  font-display: flex;
+  margin: auto;
+  padding-top: 60px;
+}
+
+.list-message .single-message {
+  width: 30%;
+  padding: 40px;
+  box-shadow: 2px 3px 10px #d7d7d7;
+  line-height: 2rem;
+}
+

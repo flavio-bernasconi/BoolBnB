@@ -1,0 +1,64 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap);body {
+  margin: 0;
+}
+
+.menu {
+  width: 100%;
+  box-shadow: 2px 3px 13px #7e7e7e;
+  position: relative;
+}
+
+.menu .nav {
+  font-family: Roboto;
+  width: 100%;
+  z-index: 99;
+  padding: 20px;
+  box-sizing: border-box;
+  left: 0;
+  padding-right: 70px;
+  background: white;
+  height: 90px;
+  box-sizing: border-box;
+  max-width: 1700px;
+  margin: auto;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+
+.menu .nav .logo {
+  position: absolute;
+  left: 50px;
+  top: 15px;
+}
+
+.menu .nav .logo img {
+  width: 60px;
+  height: 60px;
+}
+
+.menu .nav .menu-links {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: baseline;
+          align-items: baseline;
+  width: 100%;
+}
+
+.menu .nav .menu-links a {
+  margin-left: 30px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bolder;
+  padding: 4px 20px;
+  padding-bottom: 10px;
+  color: black;
+}
+
+.menu .nav .menu-links a.active {
+  border-bottom: solid 2px red;
+}
+

@@ -1,0 +1,199 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap);* {
+  font-family: Roboto !important;
+}
+
+div.mainhomepage #background-1 {
+  background-image: url("/img/hero.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  height: 60vh;
+}
+
+div.mainhomepage .search {
+  padding: 200px 0 400px 0;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+div.mainhomepage .search .searchbox {
+  padding: 30px;
+  width: 550px;
+  background: white;
+  border-radius: 5px;
+  height: 200px;
+}
+
+div.mainhomepage .search .searchbox h1 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+div.mainhomepage .search .searchbox .cerca {
+  display: -webkit-box;
+  display: flex;
+}
+
+div.mainhomepage .search .searchbox .cerca .bottone-invia {
+  background: red;
+  height: 50px;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+div.mainhomepage .search .searchbox .cerca .searchform {
+  display: -webkit-box;
+  display: flex;
+}
+
+div.mainhomepage .search .searchbox .cerca .searchform input {
+  width: 100%;
+  padding-left: 7px;
+  font-size: 16px;
+  font-weight: 100;
+  height: 40px;
+}
+
+div.mainhomepage .search .searchbox .cerca .searchform a {
+  display: inline-block;
+  text-align: end;
+  margin-left: 20px;
+  text-decoration: none;
+  padding: 10px 15px;
+  background-color: #ff5b60;
+  color: white;
+  border-radius: 5px;
+}
+
+div.mainhomepage .showflats,
+div.mainhomepage .showflatsrates {
+  padding-bottom: 30px;
+}
+
+div.mainhomepage .showflats .linkallflats,
+div.mainhomepage .showflats .flatsratetitle,
+div.mainhomepage .showflatsrates .linkallflats,
+div.mainhomepage .showflatsrates .flatsratetitle {
+  padding-top: 50px;
+  margin-bottom: 30px;
+}
+
+div.mainhomepage .showflats .linkallflats h3,
+div.mainhomepage .showflats .flatsratetitle h3,
+div.mainhomepage .showflatsrates .linkallflats h3,
+div.mainhomepage .showflatsrates .flatsratetitle h3 {
+  font-size: 25px;
+  font-weight: 700;
+  color: black;
+}
+
+div.mainhomepage .showflats .linkallflats a,
+div.mainhomepage .showflats .flatsratetitle a,
+div.mainhomepage .showflatsrates .linkallflats a,
+div.mainhomepage .showflatsrates .flatsratetitle a {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: 700;
+  color: black;
+}
+
+div.mainhomepage .showflats .someflats,
+div.mainhomepage .showflats .showflatsrates,
+div.mainhomepage .showflatsrates .someflats,
+div.mainhomepage .showflatsrates .showflatsrates {
+  padding-top: 15px;
+}
+
+div.mainhomepage .showflats .someflats .row,
+div.mainhomepage .showflats .showflatsrates .row,
+div.mainhomepage .showflatsrates .someflats .row,
+div.mainhomepage .showflatsrates .showflatsrates .row {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.mainhomepage .showflats .flat,
+div.mainhomepage .showflatsrates .flat {
+  border-radius: 8px;
+  width: 96%;
+  margin-bottom: 40px;
+  box-shadow: 2px 2px 12px #ececec;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  position: relative;
+}
+
+div.mainhomepage .showflats .flat:hover,
+div.mainhomepage .showflatsrates .flat:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  box-shadow: 6px 6px 12px #d7d7d7;
+}
+
+div.mainhomepage .showflats .flat a,
+div.mainhomepage .showflatsrates .flat a {
+  text-decoration: none;
+  color: black;
+}
+
+div.mainhomepage .showflats .flat a img,
+div.mainhomepage .showflatsrates .flat a img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+div.mainhomepage .showflats .flat a .flex-rate,
+div.mainhomepage .showflatsrates .flat a .flex-rate {
+  padding: 20px;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+div.mainhomepage .showflats .flat a .flex-rate p:first-letter,
+div.mainhomepage .showflatsrates .flat a .flex-rate p:first-letter {
+  text-transform: capitalize;
+}
+
+div.mainhomepage .showflats .flat a .flex-rate h3,
+div.mainhomepage .showflatsrates .flat a .flex-rate h3 {
+  margin-bottom: 8px;
+  width: 100%;
+  font-size: 1.6rem;
+  color: #393939;
+}
+
+div.mainhomepage .showflats .flat a .flex-rate h3::first-letter,
+div.mainhomepage .showflatsrates .flat a .flex-rate h3::first-letter {
+  text-transform: capitalize;
+}
+
+div.mainhomepage .showflats .flat a .rate,
+div.mainhomepage .showflatsrates .flat a .rate {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: white;
+  height: 40px;
+  width: 40px;
+  color: #7d7d7d;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  font-size: 15px;
+  font-weight: bolder;
+  border: 2px solid #ff5b60;
+}
+

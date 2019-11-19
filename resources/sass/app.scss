@@ -1,0 +1,106 @@
+// Fonts
+// @import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap');
+// Variables
+@import 'variables';
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+* {
+    font-family: Roboto;
+}
+
+.box-at-center {
+    margin: 0 auto;
+}
+
+.list-flat {
+    display: flex;
+    flex-wrap: wrap;
+    .flat-box {
+        width: 400px;
+        border: solid 2px blue;
+        margin: 15px;
+        padding: 30px;
+    }
+}
+.registrazione {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../img/background-register.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .form-group {
+        text-align: left;
+        margin-bottom: 25px;
+        .col-form-label {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .btn-send {
+            width: 30%;
+            float: right;
+            background: #ff5b60;
+            color: white;
+            font-weight: normal;
+            font-size: 18px;
+            border: none;
+            padding: 10px 20px;
+            letter-spacing: 2px;
+        }
+    }
+}
+
+
+  .login {
+    .box-at-center {
+    margin: 0 auto;
+    }
+    height: 100vh;
+    background-image: url("../img/background-login.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .box-login {
+        margin-top: 100px;
+        background: rgba(white, 0.7);
+        .box-top {
+            background: black;
+            padding: 10px 0;
+            color: white;
+            text-align: center;
+        }
+        .box-body {
+            padding: 40px 5px;
+            .btnlogin {
+                background: #ff5b60;
+                border-color: #ff5b60;
+            }
+            .btnforgot {
+                color: black;
+            }
+        }
+    }
+  }
+
+
+.btn-add{
+  background: #ff5b60;
+  margin-top: 30px;
+  padding:8px 16px;
+  color: white;
+  font-size: 18px;
+}
+.service-control{
+  padding-bottom:30px;
+  label{
+    font-size:20px;
+
+  }
+  label::first-letter{
+    text-transform: uppercase;
+  }
+  input{
+    margin-right:15px;
+  }
+}

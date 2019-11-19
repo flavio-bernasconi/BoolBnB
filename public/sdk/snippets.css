@@ -1,0 +1,37 @@
+@import "prism-themes/themes/prism-ghcolors.css";
+@import "prismjs/plugins/line-numbers/prism-line-numbers.css";
+
+.snippets {
+    padding: 20px;
+    width: 100%;
+}
+
+.snippet {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.snippets .code-menu > div {
+    margin-left: 10px;
+
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .snippets {
+        .code-menu {
+            display: flex;
+            flex-direction: column;
+
+            & > div {
+                margin-left: 0;
+
+                &:first-child {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}

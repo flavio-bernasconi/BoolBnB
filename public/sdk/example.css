@@ -1,0 +1,7 @@
+.example-view {
+
+    &__content {
+        min-height: 400px;
+        position: relative;
+    }
+}

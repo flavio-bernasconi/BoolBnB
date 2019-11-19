@@ -1,0 +1,204 @@
+.top-menu {
+    align-items: center;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, .1);
+    color: var(--color-mine-shaft);
+    display: flex;
+    padding: 24px 40px;
+    position: relative;
+    width: 100%;
+    z-index: 6;
+
+    &.-is-mobile {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    &__header {
+        margin-right: auto;
+        position: relative;
+    }
+
+    &__navbar {
+        display: inline-flex;
+        margin-left: 10px;
+    }
+
+    &__headline {
+        display: flex;
+        flex-direction: row;
+
+        h3 {
+            cursor: pointer;
+            font-size: 24px;
+            line-height: 24px;
+            margin-left: 10px;
+            padding-bottom: 12px;
+
+
+            &.-hovered {
+                color: var(--color-brand-red);
+            }
+        }
+
+        .hamburger {
+            margin-top: 4px;
+        }
+    }
+
+    &__breadcrumbs {
+        color: var(--color-gray);
+        cursor: pointer;
+        font-size: 14px;
+        padding-left: 32px;
+    }
+
+    &__button {
+        align-items: center;
+        color: inherit;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        font-weight: bold;
+        margin-left: 32px;
+        text-align: center;
+        text-transform: uppercase;
+
+        &:link {
+            text-decoration: none;
+        }
+
+        &:hover {
+            color: var(--color-brand-red);
+            svg path {
+                fill: var(--color-brand-red);
+                stroke: var(--color-brand-red);
+                stroke-width: 0;
+            }
+        }
+
+        &.-active {
+            color: var(--color-brand-red);
+            svg path {
+                fill: var(--color-brand-red);
+                stroke: var(--color-brand-red);
+                stroke-width: 0;
+            }
+        }
+
+        &.-description.-active svg path {
+            fill: none;
+            stroke-width: 2px;
+        }
+
+        &.-description:hover svg path {
+            fill: none;
+            stroke-width: 2px;
+        }
+
+        &.-disabled {
+            color: var(--color-silver-1);
+            cursor: unset;
+
+            svg path {
+                fill: var(--color-silver-1);
+                stroke: var(--color-silver-1);
+            }
+        }
+
+        &.-small-screen {
+            display: none;
+        }
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        svg {
+            margin-bottom: 12px;
+        }
+    }
+
+    &__button-tooltip {
+        margin-left: 32px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .top-menu {
+        position: relative;
+
+        &__navbar {
+            background-color: #ffffff;
+            border-radius: 1px;
+            box-shadow: 0 2px 11px rgba(0, 0, 0, .15);
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            position: absolute;
+            right: 7px;
+            top: 75%;
+            visibility: hidden;
+
+            &.-active {
+                visibility: visible;
+            }
+        }
+
+        &__navbar::after {
+            background: 0 0;
+            background-color: #ffffff;
+            box-shadow: 2px 2px 5px -2px rgba(0, 0, 0, .15);
+            content: "";
+            height: 16px;
+            left: 86%;
+            margin: .5px 0 0;
+            position: absolute;
+            top: 0;
+            transform: translateX(-50%) translateY(-50%) rotate(-135deg);
+            width: 16px;
+            z-index: 2;
+        }
+
+        &__button {
+            align-items: center;
+            border-bottom: 1px solid #edf2f7;
+            flex-direction: row;
+            margin: 0;
+            padding: 15px;
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            &-tooltip {
+                margin: 0;
+            }
+
+            svg {
+                margin: 0 8px 0 0;
+            }
+
+            &.-small-screen {
+                border-bottom: none;
+                display: flex;
+                justify-content: center;
+
+                svg {
+                    margin: 0;
+                }
+            }
+
+            &.-more-button {
+                background-color: #efefef;
+                border-radius: 100%;
+                flex-grow: 0;
+                flex-shrink: 0;
+                height: 40px;
+                padding: 0;
+                width: 40px;
+            }
+        }
+    }
+}
